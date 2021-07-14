@@ -1,4 +1,6 @@
-# terraform-module-template
+# db operator
+
+This terraform module allows you to install the Helm Chart for the DB operator
 
 ## Getting Started
 
