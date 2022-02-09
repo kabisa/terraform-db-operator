@@ -3,7 +3,7 @@ operator:
   install: true
   image:
     repository: obeleh/db-operator
-    tag: "1619011"
+    tag: "b2b1a7c"
   namespace: db-operator-system
 */
 
@@ -12,7 +12,7 @@ resource "helm_release" "db-operator" {
   namespace        = var.namespace
   repository       = "https://obeleh.github.io/db-operator/helm/"
   chart            = "db-operator"
-  version          = "0.1.5"
+  version          = "0.1.6"
   create_namespace = var.create_namespace
   values = [
     yamlencode({
